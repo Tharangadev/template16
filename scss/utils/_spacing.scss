@@ -1,0 +1,47 @@
+@import "../variables";
+///sizing bases
+$sizes: ("small", "medium", "big");
+$paddings: (
+  "pa": padding,
+  "pt": padding-top,
+  "pb": padding-bottom,
+  "pr": padding-right,
+  "pl": padding-left,
+);
+
+@each $padding, $i in $paddings {
+  @each $size in $sizes {
+    .#{$padding}-#{$size} {
+      @if $size==small {
+        #{$i}: #{$small};
+      } @else if $size==medium {
+        #{ $i}: #{$medium};
+      } @else if $size==big {
+        #{ $i}: #{$big};
+      }
+    }
+  }
+}
+
+///margins
+$margins: (
+  "ma": margin,
+  "mt": margin-top,
+  "mb": margin-bottom,
+  "mr": margin-right,
+  "ml": margin-left,
+);
+
+@each $margin, $i in $margins {
+  @each $size in $sizes {
+    .#{$margin}-#{$size} {
+      @if $size==small {
+        #{$i}: #{$small};
+      } @else if $size==medium {
+        #{ $i}: #{$medium};
+      } @else if $size==big {
+        #{ $i}: #{$big};
+      }
+    }
+  }
+}

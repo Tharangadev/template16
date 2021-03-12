@@ -1,0 +1,8 @@
+@import "functions";
+@import "./mixings";
+.header {
+  margin-bottom: rem(40);
+  @include breakpoint-down(medium) {
+    padding: 0 rem(20);
+  }
+}

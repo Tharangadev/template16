@@ -1,0 +1,29 @@
+@import "./functions";
+@import "./mixings";
+@import "./variables";
+@import "./colors";
+.themedark {
+  * {
+    color: $Very_Light;
+  }
+  body,
+  #model {
+    background: $Very_Dark_back;
+  }
+  .header,
+  .detailsgrid__single,
+  input,
+  option,
+  #model .backbutton,
+  select {
+    background: $Dark_Blue;
+    box-shadow: none;
+  }
+  .filter__text {
+    background: $Dark_Blue;
+    box-shadow: none;
+  }
+  .filter__dropdown {
+    box-shadow: none;
+  }
+}
