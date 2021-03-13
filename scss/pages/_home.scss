@@ -2,4 +2,125 @@
 @import "../mixings";
 @import "../variables";
 @import "../colors";
+$paracolor: lighten($dark_gray, 10%);
+body {
+  background: lighten($dark_gray, 50%);
+}
+///middle section
+.center {
+  margin: rem(0) rem(25) rem(25);
+  text-align: center;
+  box-shadow: 0px 0px 1px 1px lighten($dark_gray, 40%);
+  margin-top: -25%;
+  background: #fff;
+  border-radius: rem(10);
+  padding: rem(40) rem(25);
+  &_logo {
+    text-align: center;
+    margin-bottom: rem(25);
+    margin-top: rem(-70);
+  }
+  h3 {
+    font-size: rem(20);
+    font-weight: 700;
+    margin-bottom: rem(25);
+  }
+  p {
+    font-size: rem(15);
+    color: $dark_gray;
+    margin-bottom: rem(30);
+  }
+  .fancy-button {
+    margin-right: rem(10);
+  }
+}
+//project details section
+.project-details {
+  margin: rem(0) rem(25) rem(25);
+  text-align: center;
+  box-shadow: 0px 0px 1px 1px lighten($dark_gray, 40%);
+  background: #fff;
+  border-radius: rem(10);
+  padding: rem(40) rem(25);
+}
 
+.project-details {
+  &_emphasis {
+    font-size: rem(30);
+    font-weight: 700;
+    margin-bottom: rem(10);
+  }
+  &_subhead {
+    margin-bottom: rem(25);
+    color: lighten($dark_gray, 20%);
+  }
+  .progress-bar {
+    background: lighten($dark_gray, 40%);
+    height: rem(10);
+    margin: 0 auto;
+    position: relative;
+    &:after {
+      height: 100%;
+      width: 50%;
+      background: $moderate_cyan;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
+.project-discriptions {
+  text-align: left;
+  margin: rem(0) rem(25) rem(25);
+  box-shadow: 0px 0px 1px 1px lighten($dark_gray, 40%);
+  background: #fff;
+  border-radius: rem(10);
+  padding: rem(40) rem(25);
+  h3 {
+    font-size: rem(20);
+    font-weight: 700;
+    margin-bottom: rem(25);
+  }
+  p {
+    font-size: rem(14);
+    line-height: rem(25);
+    color: $paracolor;
+  }
+  &__card {
+    box-shadow: 0px 0px 1px 1px lighten($dark_gray, 40%);
+    padding: rem(25);
+    border-radius: rem(10);
+    margin-bottom: rem(25);
+    h4 {
+      font-size: rem(15);
+      font-weight: 700;
+    }
+    .card-subheader {
+      color: $moderate_cyan;
+      font-weight: 600;
+    }
+  }
+  &__left {
+    margin-bottom: rem(25);
+    span {
+      &:first-child {
+        font-size: rem(30);
+        font-weight: 700;
+        padding-right: rem(10);
+      }
+      &:nth-child(2) {
+        color: $paracolor;
+      }
+    }
+  }
+  .wrap {
+    display: flex;
+    align-items: center;
+  }
+}
+////out of stocks
+.out-of-stocks {
+  filter: grayscale(100%);
+  h4 {
+    color: $dark_gray;
+  }
+}

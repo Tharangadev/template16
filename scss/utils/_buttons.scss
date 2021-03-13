@@ -1,3 +1,13 @@
 @import "../functions";
 @import "../variables";
 @import "../mixings";
+
+.fancy-button {
+  background: $moderate_cyan;
+  padding: rem(20) rem(40);
+  border-radius: rem(50);
+  border: none;
+  color: $white;
+  display: lnline-block;
+  font-weight: 700;
+}

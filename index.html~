@@ -32,17 +32,12 @@
         <div class="center_logo">
           <img src="./assets/images/logo-mastercraft.svg" alt="" />
         </div>
-        <h3>
-          Mastercraft Bamboo <br class="display-mobile" />
-          Monitor Raiser
-        </h3>
+        <h3>Mastercraft Bamboo Monitor Raiser</h3>
         <p>Abeautiful handcrafted monitor stand to reduce and eye strain.</p>
         <button class="fancy-button">back this project</button>
-        <img
-          class="icon-button"
-          src="./assets/images/icon-bookmark.svg"
-          alt=""
-        />
+        <button class="icon-button">
+          <img src="./assets/images/icon-bookmark.svg" alt="" />
+        </button>
       </div>
     </section>
     <section class="project-details">
@@ -60,7 +55,7 @@
       </div>
       <div class="progress-bar"></div>
     </section>
-    <section class="project-discriptions">
+    <section class="project-details">
       <h3>About this project</h3>
       <p>
         The Mastercraft Bamboo Monitor Raiser is a sturdy and stylish platform
@@ -74,50 +69,44 @@
         desk space below your computer to allow notepads, pends and USB stucks
         to be stored under the stand.
       </p>
-      <div class="project-discriptions__card">
+      <div class="project-details_card">
         <h4>Bamboo Stand</h4>
-        <p class="card-subheader">Pleadge $25 or more</p>
+        <p>Pleadge $25 or more</p>
         <p>
           Yoi ge and ergonomic stand made of natural bamboo. you've helped us
           launch out promotional campaign. and you'll be added to special
           backers member list.
         </p>
-        <div class="project-discriptions__left">
-          <div class="wrap">
-            <span>101</span>
-            <span>left</span>
-          </div>
+        <div class="project-details__left">
+          <span>101</span>
+          <span>left</span>
         </div>
         <div class="fancy-button">Select Reward</div>
       </div>
-      <div class="project-discriptions__card">
+      <div class="project-details_card">
         <h4>Black Edition Stand</h4>
-        <p class="card-subheader">Pleadge $75 or more</p>
+        <p>Pleadge $75 or more</p>
         <p>
           You get a Black Special Edition computer stand and a personal thank
           you. You'll be added to out Backer member list.Shipping is included.
         </p>
-        <div class="project-discriptions__left">
-          <div class="wrap">
-            <span>64</span>
-            <span>left</span>
-          </div>
+        <div class="project-details__left">
+          <span>64</span>
+          <span>left</span>
         </div>
         <div class="fancy-button">Select Reward</div>
       </div>
-      <div class="project-discriptions__card out-of-stocks">
+      <div class="project-details_card">
         <h4>Mahigany Special Edition</h4>
-        <p class="card-subheader">Pleadge $200 or more</p>
+        <p>Pleadge $200 or more</p>
         <p>
           You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
           personal thank you.You'll be added to out Backer member list.Shipping
           is included.
         </p>
-        <div class="project-discriptions__left">
-          <div class="wrap">
-            <span>0</span>
-            <span>left</span>
-          </div>
+        <div class="project-details__left">
+          <span>0</span>
+          <span>left</span>
         </div>
         <div class="fancy-button">out of Stock</div>
       </div>

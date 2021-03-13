@@ -1,8 +1,14 @@
 @import "functions";
 @import "./mixings";
-.header {
-  margin-bottom: rem(40);
-  @include breakpoint-down(medium) {
-    padding: 0 rem(20);
-  }
+
+//header
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(30) rem(25);
+  padding-bottom: 80%;
+  background: url(../../assets/images/image-hero-mobile.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
 }
