@@ -15,6 +15,9 @@ body {
   background: #fff;
   border-radius: rem(10);
   padding: rem(40) rem(25);
+  @include breakpoint-up(medium) {
+    padding: rem(40) rem(50);
+  }
   &_logo {
     text-align: center;
     margin-bottom: rem(25);
@@ -24,11 +27,40 @@ body {
     font-size: rem(20);
     font-weight: 700;
     margin-bottom: rem(25);
+    @include breakpoint-up(medium) {
+      font-size: rem(28);
+      margin-bottom: rem(25);
+    }
   }
   p {
     font-size: rem(15);
     color: $dark_gray;
     margin-bottom: rem(30);
+    @include breakpoint-up(medium) {
+      font-size: rem(17);
+      margin-bottom: rem(40);
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    &_block {
+      display: flex;
+      align-items: center;
+      z-index: 1;
+      img {
+        z-index: 1;
+      }
+      div {
+        font-weight: 700;
+        background: lighten($dark_gray, 40%);
+        color: lighten($dark_gray, 10%);
+        padding: rem(19);
+        margin-left: rem(-56);
+        padding-left: rem(67);
+        border-radius: rem(30);
+      }
+    }
   }
   .fancy-button {
     margin-right: rem(10);
@@ -42,9 +74,10 @@ body {
   background: #fff;
   border-radius: rem(10);
   padding: rem(40) rem(25);
-}
-
-.project-details {
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   &_emphasis {
     font-size: rem(30);
     font-weight: 700;

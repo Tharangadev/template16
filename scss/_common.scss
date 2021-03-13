@@ -11,4 +11,15 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   align-items: center;
+  @include breakpoint-up(medium) {
+    background: url(../../assets/images/image-hero-desktop.webp);
+    padding-bottom: 30%;
+    background-size: cover;
+    margin-bottom: rem(190);
+  }
+}
+.selection-wrapper {
+  width: 1120px;
+  padding: 0 10%;
+  margin: 0 auto;
 }
