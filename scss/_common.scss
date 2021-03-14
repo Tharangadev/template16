@@ -19,7 +19,9 @@ header {
   }
 }
 .selection-wrapper {
-  width: 1120px;
-  padding: 0 10%;
-  margin: 0 auto;
+  @include breakpoint-up(medium) {
+    width: 1120px;
+    padding: 0 10%;
+    margin: 0 auto;
+  }
 }

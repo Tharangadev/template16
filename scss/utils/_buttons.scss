@@ -4,7 +4,12 @@
 
 .fancy-button {
   background: $moderate_cyan;
-  padding: rem(20) rem(40);
+  @include breakpoint-up(medium) {
+    padding: rem(20) rem(40);
+  }
+  @include breakpoint-down(medium) {
+    padding: rem(10) rem(20);
+  }
   border-radius: rem(50);
   border: none;
   color: $white;

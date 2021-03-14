@@ -52,6 +52,9 @@ body {
         z-index: 1;
       }
       div {
+        @include breakpoint-down(medium) {
+          display: none;
+        }
         font-weight: 700;
         background: lighten($dark_gray, 40%);
         color: lighten($dark_gray, 10%);
@@ -74,16 +77,71 @@ body {
   background: #fff;
   border-radius: rem(10);
   padding: rem(40) rem(25);
-  &_wrapper {
-    display: flex;
-    justify-content: space-between;
+  @include breakpoint-up(medium) {
+    padding: rem(50);
   }
-  &_emphasis {
+  &__wrapper {
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: start;
+    }
+  }
+  &__price {
+    @include breakpoint-up(medium) {
+      text-align: left;
+      padding-right: rem(40);
+      position: relative;
+      margin-right: rem(10);
+    }
+    &:after {
+      @include breakpoint-up(medium) {
+        content: "";
+        display: block;
+        height: 60%;
+        width: 1px;
+        background: #7a7a7a;
+        position: absolute;
+        margin: 0 rem(10);
+        top: 10%;
+        right: 0;
+      }
+    }
+  }
+  &__backers {
+    @include breakpoint-up(medium) {
+      text-align: left;
+      padding-right: rem(40);
+      position: relative;
+      margin-right: rem(10);
+    }
+    &:after {
+      @include breakpoint-up(medium) {
+        content: "";
+        display: block;
+        height: 60%;
+        width: 1px;
+        margin: 0 rem(10);
+        background: #7a7a7a;
+        position: absolute;
+        top: 10%;
+        right: 0;
+      }
+    }
+  }
+  &__days {
+    @include breakpoint-up(medium) {
+      text-align: left;
+      padding-right: rem(40);
+      position: relative;
+      margin-right: rem(10);
+    }
+  }
+  &__emphasis {
     font-size: rem(30);
     font-weight: 700;
     margin-bottom: rem(10);
   }
-  &_subhead {
+  &__subhead {
     margin-bottom: rem(25);
     color: lighten($dark_gray, 20%);
   }
@@ -108,6 +166,9 @@ body {
   background: #fff;
   border-radius: rem(10);
   padding: rem(40) rem(25);
+  @include breakpoint-up(medium) {
+    padding: rem(40) rem(50);
+  }
   h3 {
     font-size: rem(20);
     font-weight: 700;
@@ -117,23 +178,52 @@ body {
     font-size: rem(14);
     line-height: rem(25);
     color: $paracolor;
+    @include breakpoint-up(medium) {
+      font-size: rem(15);
+    }
   }
   &__card {
     box-shadow: 0px 0px 1px 1px lighten($dark_gray, 40%);
     padding: rem(25);
     border-radius: rem(10);
     margin-bottom: rem(25);
+    @include breakpoint-up(medium) {
+      padding: rem(40);
+    }
+    .card-head {
+      @include breakpoint-up(medium) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
     h4 {
       font-size: rem(15);
       font-weight: 700;
+      @include breakpoint-up(medium) {
+        display: inline;
+        font-size: rem(20);
+      }
     }
     .card-subheader {
       color: $moderate_cyan;
       font-weight: 600;
+      @include breakpoint-up(medium) {
+        display: inline;
+        font-size: rem(15);
+      }
     }
   }
   &__left {
     margin-bottom: rem(25);
+    @include breakpoint-up(medium) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .fancy-button {
+      @include breakpoint-up(medium) {
+        font-size: rem(13);
+      }
+    }
     span {
       &:first-child {
         font-size: rem(30);
@@ -148,6 +238,9 @@ body {
   .wrap {
     display: flex;
     align-items: center;
+    @include breakpoint-down(medium) {
+      margin-bottom: rem(20);
+    }
   }
 }
 ////out of stocks
